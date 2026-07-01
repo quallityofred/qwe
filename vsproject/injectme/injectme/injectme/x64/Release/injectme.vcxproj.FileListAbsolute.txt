@@ -1,0 +1,2 @@
+C:\Users\egory\Documents\hoyoverse\vsproject\injectme\injectme\x64\Release\injectme.exe.lastcodeanalysissucceeded
+C:\Users\egory\Documents\hoyoverse\vsproject\injectme\injectme\injectme\x64\Release\NativeCodeAnalysis.read.1.tlog
