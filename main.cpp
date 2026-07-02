@@ -176,6 +176,15 @@ int wmain() {
         return 1;
     }
 
+    // ... код, который собирает и записывает athpexnt_mod.sys на диск ...
+    std::cout << "[PASS] Workspace binary assembly completed." << std::endl;
+
+    // ВСТАВЬТЕ ЭТОТ БЛОК СЮДА:
+    std::cout << "[INFO] Automatically signing the generated driver..." << std::endl;
+    // Замените старую строку system(...) на эту (проверьте свою версию папки Windows Kits):
+    system("\"\"D:\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\signtool.exe\" sign /sha1 3C57EFC1EF7DD3F5AF5842C59322DF52D43FCBD8 /fd sha256 \"C:\\Users\\egory\\Documents\\hoyoverse\\build\\athpexnt_mod.sys\"\"");
+
+
     if (!elevation.is_elevated) {
         std::wcerr << L"[ERROR] Phase 3 requires an elevated process to manage "
                       L"the diagnostic kernel-driver service.\n";
